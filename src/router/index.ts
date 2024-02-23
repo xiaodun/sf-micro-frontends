@@ -7,11 +7,29 @@ import {
 
 const routes: Array<RouteRecordRaw> = [
   {
-    path: "/hello",
+    path: "/",
     name: "Home",
-    component: () => import("@/views/HelloWorld.vue"),
+    component: () => import("@/views/HomePage.vue"),
     meta: {
       title: "首页",
+    },
+  },
+  {
+    path: "/notesChild",
+    name: "notesChild",
+    component: () => import("@/components/MicroChildApp.vue"),
+    meta: {
+      title: "sf-notes",
+      url: "http://localhost:8000/notes",
+    },
+  },
+  {
+    path: "/vue3Child",
+    name: "vue3Child",
+    component: () => import("@/components/MicroChildApp.vue"),
+    meta: {
+      title: "sf-vue3",
+      url: "http://localhost:5173",
     },
   },
 ];
