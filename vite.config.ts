@@ -14,6 +14,9 @@ export default defineConfig({
   },
   server: {
     port: 5177,
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+    },
   },
   plugins: [
     AutoImport({

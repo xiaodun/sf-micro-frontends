@@ -1,5 +1,5 @@
 {
-  "name": "sf-vue3",
+  "name": "sf-micro-frontends",
   "private": true,
   "version": "0.0.0",
   "scripts": {
@@ -8,6 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@micro-zoe/micro-app": "1.0.0-rc.4",
     "@vitejs/plugin-vue-jsx": "^2.0.0",
     "@vueuse/core": "^10.2.0",
     "element-plus": "2.2.6",

@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@micro-zoe/micro-app':
+    specifier: 1.0.0-rc.4
+    version: 1.0.0-rc.4
   '@vitejs/plugin-vue-jsx':
     specifier: ^2.0.0
     version: 2.0.0(vite@3.0.0)(vue@3.3.0)
@@ -596,6 +599,10 @@ packages:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.0
       '@jridgewell/sourcemap-codec': 1.4.14
+    dev: false
+
+  /@micro-zoe/micro-app@1.0.0-rc.4:
+    resolution: {integrity: sha512-8ZDCwV0w3m11xlECFCA9VJYInNIPqt6kfiH1+/ODoupPSSrKNPzUnmhqYRAKZQP1MrXa0w9O60DT2/mPFctwdw==}
     dev: false
 
   /@nodelib/fs.scandir@2.1.5:

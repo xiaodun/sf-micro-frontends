@@ -1,8 +1,20 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { ref } from "vue";
+const activeName = ref("first");
+</script>
 
 <template>
-  <div>HelloWorld</div>
-  <el-button>切换</el-button>
+  <el-tabs v-model="activeName" class="demo-tabs">
+    <el-tab-pane label="User" name="first">
+      <!-- <micro-app
+        iframe
+        name="notes"
+        url="http://localhost:8000/notes"
+      ></micro-app> -->
+      <micro-app name="vue3" iframe url="http://localhost:5173"></micro-app>
+    </el-tab-pane>
+    <el-tab-pane label="Config" name="second"> </el-tab-pane>
+  </el-tabs>
 </template>
 
 <style scoped>
