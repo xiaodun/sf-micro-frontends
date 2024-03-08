@@ -1,11 +1,13 @@
 <script setup>
 import { useRouter } from "vue-router";
+import microApp from "@micro-zoe/micro-app";
 const router = useRouter();
-const onJumpNotes = () => {
-  router.push({ name: "notesChild" });
-};
+
 const onJumpVue3 = () => {
   router.push({ name: "vue3Child" });
+};
+const onJumpNotes = () => {
+  router.push({ name: "notesChild" });
 };
 </script>
 

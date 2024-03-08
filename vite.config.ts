@@ -20,6 +20,7 @@ export default defineConfig({
   },
   plugins: [
     AutoImport({
+      imports: ["vue", "vue-router"],
       resolvers: [ElementPlusResolver()],
     }),
     Components({

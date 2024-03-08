@@ -21,6 +21,7 @@ const routes: Array<RouteRecordRaw> = [
     meta: {
       title: "sf-notes",
       url: "http://localhost:8000/notes",
+      defaultPage: "/qrCode",
     },
   },
   {
